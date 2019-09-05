@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"     #最低系统版本
   s.source       = { :git => "https://github.com/ZSoYoung/BaiduASRSDK.git" ,:tag => "#{s.version}"}   #工程地址及版本号
   s.requires_arc = true   #是否必须arc
-  s.source_files = "BaiduASR/*.{h,m}"   #SDK实际的重要文件路径，这里有个坑，后面文章再说
+  s.source_files = "BaiduASR/**/*"   #SDK实际的重要文件路径
   s.frameworks   = "UIKit","Foundation"    #需要导入的frameworks名称，注意不要带上frameworks
 end
